@@ -36,8 +36,29 @@ def image_mars():
                      alt="здесь должна была быть картинка, но не нашлась">
                      <p>Вот она какая, красная планета.</p>
                 </body>
-                </html>
-'''
+                </html>'''
+
+
+@app.route('/promotion_image')
+def promotion_image():
+    return f'''<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Колонизация</title>
+                    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
+                </head>
+                <body>
+                     <h1>Жди нас, Марс!</h1>
+                     <img src="{url_for('static', filename='img/mars.jpg')}" width=500 height=400 
+                     alt="здесь должна была быть картинка, но не нашлась">
+                     <p color=#ffff00>Человечество вырастает из детства.</p>
+                     <p>Человечеству мала одна планета.</p>
+                     <p>Мы сделаем обитаемыми безжизненные пока планеты.</p>
+                     <p>И начнем с Марса!</p>
+                     <p>Присоединяйся!</p>
+                </body>
+                </html>'''
 
 
 if __name__ == '__main__':
